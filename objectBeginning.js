@@ -9,4 +9,6 @@ const person = {
 };
 
 
-console.log(person.id + "-" + person.fullName() +  ": " + person.firstName + " is " + person.age + " years old.");
+console.log("\n  " + person.id + "-" + person.fullName() +  ": " + person.firstName + " is " + person.age + " years old.\n");
+
+console.log(person);
