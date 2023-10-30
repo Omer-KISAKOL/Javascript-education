@@ -3,8 +3,10 @@ const person = {
     lastName : "KISAKOL",
     id : 4121,
     age : 23,
-    eyeColor : "green"
+    eyeColor : "green",
+
+    fullName: function() {return this.firstName + " " + this.lastName}
 };
 
 
-console.log(person.id + ": " + person.firstName + " is " + person.age + " years old.");
+console.log(person.id + "-" + person.fullName() +  ": " + person.firstName + " is " + person.age + " years old.");
