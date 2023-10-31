@@ -81,3 +81,11 @@ for(let i = 0; i < users.length; i++){
 /* console.log(users[0].ad);
 console.log(users[1].ad);
 console.log(users[2].ad); */
+
+
+
+let text = "";
+for (let x of meyve) {
+    text += x + "\n";
+}
+console.log(text);
