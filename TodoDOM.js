@@ -36,7 +36,12 @@ function displayTodos() {
         todosDOM.innerHTML = "Liste Boş!";
     } else {
         todos.forEach((item) => {
-            result += ' <li class="flex justify-between border px-4 py-3 flex items-center justify-between">            <span>${item.todoTitle}</span>            <button class="text-red-400" onclick="deleteTodo(${item.id})">Sil</button>            </li> ';
+            result += `
+                <li class="flex justify-between border px-4 py-3 flex items-center justify-between"> 
+                <span>${item.todoTitle}</span> 
+                <button class="text-red-400" onclick="deleteTodo(${item.id})">Sil</button> 
+                </li>
+                `;
             }
         );
         todosDOM.innerHTML = result;
