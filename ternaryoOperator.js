@@ -1,3 +1,4 @@
+//ANCHOR - 'if-else' YERİNE KULLANILABİLECEK MODERN JAVASCRİPT OPERATÖRÜ
 const username = "okisakol";
 const password = "1234567";
 
