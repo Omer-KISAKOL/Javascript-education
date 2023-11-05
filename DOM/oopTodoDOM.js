@@ -27,7 +27,6 @@ btnAddTodoDOM.addEventListener("click", function (e) {
   const todo = new Todo(id, title);
   todoArr.push(todo);
   todoArr.reverse();
-  UI.alert("Todo Eklendi!");
   UI.clearInput();
   UI.displayTodos();
   // add to localStorage
@@ -81,7 +80,6 @@ class UI {
     todoArr = todoArr.filter((item) => item.id !== +id);
     Storage.addTodoStorage(todoArr);
     UI.displayTodos();
-    UI.alert("Todo Silindi!");
   }
 
   static clearTodos() {
@@ -89,12 +87,7 @@ class UI {
       todoArr = [];
       Storage.addTodoStorage(todoArr);
       UI.displayTodos();
-      UI.alert("Liste Temizlendi!");
     });
-  }
-
-  static alert(text) {
-    window.alert(text);
   }
 }
 
